@@ -1,0 +1,145 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form</title>
+  <link rel="stylesheet" href="Formstyle.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Admission Form</h2>
+    <form id="admissionForm">
+
+      <label>Affix Recent Passport Size Photo:</label>
+      <input type="file" id="photo" accept="image/*">
+      <span class="error" id="photoError"></span><br><br>
+
+      <label>Full Name (BLOCK LETTERS as in Certificates):</label>
+      <div class="row">
+        <div class="form-group">
+          <input type="text" id="fname" placeholder="First Name">
+          <span class="error" id="fnameError"></span>
+        </div>
+        <div class="form-group">
+          <input type="text" id="mname" placeholder="Middle Name">
+          <span class="error" id="mnameError"></span>
+        </div>
+        <div class="form-group">
+          <input type="text" id="lname" placeholder="Last Name">
+          <span class="error" id="lnameError"></span>
+        </div>
+      </div>
+
+      <label>Email ID:</label>
+      <input type="email" id="email">
+      <span class="error" id="emailError"></span><br>
+
+      <label>EMIS Number:</label>
+      <input type="text" id="emis" maxlength="11">
+      <span class="error" id="emisError"></span><br>
+
+      <div class="row">
+        <div class="form-group">
+          <label>Gender:</label>
+          <select id="gender">
+            <option value="">--Select--</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+          <span class="error" id="genderError"></span>
+        </div>
+
+        <div class="form-group">
+          <label>Date of Birth:</label>
+          <input type="date" id="dob">
+          <span class="error" id="dobError"></span>
+        </div>
+      </div>
+
+      <label>Birth Place:</label>
+      <input type="text" id="birthplace">
+      <span class="error" id="birthplaceError"></span><br>
+
+      <label>Nationality:</label>
+      <input type="text" id="nationality">
+      <span class="error" id="nationalityError"></span><br>
+
+      <label>Religion:</label>
+      <input type="text" id="religion">
+      <span class="error" id="religionError"></span><br>
+
+      <label>Mother Tongue:</label>
+      <input type="text" id="mothertongue">
+      <span class="error" id="mothertongueError"></span><br>
+
+      <label>Parents / Guardian Name (CAPITAL LETTERS):</label><br>
+      <input type="text" id="fatherName" placeholder="Father's Name">
+      <span class="error" id="fatherNameError"></span><br>
+      <input type="text" id="motherName" placeholder="Mother's Name">
+      <span class="error" id="motherNameError"></span><br>
+      <input type="text" id="guardianName" placeholder="Guardian's Name">
+      <span class="error" id="guardianNameError"></span><br>
+
+      <label>Father's Qualification & Occupation:</label><br>
+      <input type="text" id="fatherQual" placeholder="Qualification">
+      <span class="error" id="fatherQualError"></span><br>
+      <input type="text" id="fatherOcc" placeholder="Occupation">
+      <span class="error" id="fatherOccError"></span><br>
+
+      <label>Mother's Qualification & Occupation:</label><br>
+      <input type="text" id="motherQual" placeholder="Qualification">
+      <span class="error" id="motherQualError"></span><br>
+      <input type="text" id="motherOcc" placeholder="Occupation">
+      <span class="error" id="motherOccError"></span><br>
+
+      <label>Guardian's Qualification & Occupation:</label><br>
+      <input type="text" id="guardianQual" placeholder="Qualification">
+      <span class="error" id="guardianQualError"></span><br>
+      <input type="text" id="guardianOcc" placeholder="Occupation">
+      <span class="error" id="guardianOccError"></span><br>
+
+      <label>Annual Income:</label>
+      <input type="number" id="income">
+      <span class="error" id="incomeError"></span><br>
+
+      <div class="row">
+        <div class="form-group">
+          <label>Permanent Address:</label>
+          <textarea id="permAddress"></textarea>
+          <span class="error" id="permAddressError"></span>
+        </div>
+        <div class="form-group">
+          <label>Address for Communication:</label>
+          <textarea id="commAddress"></textarea>
+          <span class="error" id="commAddressError"></span>
+        </div>
+      </div>
+
+      <label>Pin Code:</label>
+      <input type="text" id="pincode" maxlength="6">
+      <span class="error" id="pincodeError"></span><br>
+
+      <label>STD Code:</label>
+      <input type="text" id="stdCode">
+      <span class="error" id="stdCodeError"></span><br>
+
+      <div class="row">
+        <div class="form-group">
+          <label>Phone No:</label>
+          <input type="text" id="phone">
+          <span class="error" id="phoneError"></span>
+        </div>
+        <div class="form-group">
+          <label>Mobile Number:</label>
+          <input type="text" id="mobile" maxlength="10">
+          <span class="error" id="mobileError"></span>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="FormValidation.js"></script>
+</body>
+</html>
